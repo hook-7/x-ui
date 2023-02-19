@@ -8,3 +8,13 @@ services:
       - $PWD/cert/:/root/cert/
     restart: unless-stopped
     network_mode: host
+
+  cf:
+    image: cloudflare/cloudflared:latest
+    container_name: cf
+    restart: unless-stopped
+    command: 
+      tunnel
+      --no-autoupdate run
+      --token eyJhIjoiMDJmMTg4ZmUyZjI4NGY5ZmY2YmIyZTQ2MmNhNmYyNmQiLCJ0IjoiNjZkZjFiNDItMzdmNC00NWM0LTliNTQtOTZjMmQxZmViY2MwIiwicyI6Ik1qaGlaR1E0WlRBdE5tRTBNQzAwTURnMkxUaGxPVE10T0dVd1l6Z3laREl3TmpRMCJ9
+    network_mode: host
