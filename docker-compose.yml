@@ -4,8 +4,8 @@ services:
     image: enwaiax/x-ui
     container_name: x-ui
     volumes:
-      - $PWD/db/:/etc/x-ui/
-      - $PWD/cert/:/root/cert/
+      - ./db/:/etc/x-ui/
+      - ./cert/:/root/cert/
     restart: unless-stopped
     network_mode: host
 
