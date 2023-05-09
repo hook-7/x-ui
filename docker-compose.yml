@@ -10,7 +10,6 @@ services:
     ports:
       - 80:80
       - 54321:54321
-    # network_mode: host
 
   # cf:
   #   image: cloudflare/cloudflared:latest
