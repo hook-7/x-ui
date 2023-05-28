@@ -1,0 +1,5 @@
+2023/05/28 07:21:05 [notice] 36#36: signal process started
+2023/05/28 07:21:05 [notice] 1#1: using the "epoll" event method
+2023/05/28 07:21:05 [notice] 1#1: start worker processes
+2023/05/28 07:21:05 [notice] 1#1: start worker process 37
+2023/05/28 07:21:05 [notice] 1#1: start worker process 38
