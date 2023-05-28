@@ -7,6 +7,13 @@ services:
       - ./db/:/etc/x-ui/
       - ./cert/:/root/cert/
 
+
+  web:
+    image: war7ng/go-web:v2-20230520-094035
+    restart: unless-stopped
+    env_file:
+      - ./.env
+ 
   nginx:
     image: nginx:latest
     restart: unless-stopped
