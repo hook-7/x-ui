@@ -1,11 +1,11 @@
 services:
   xui:
     image: enwaiax/x-ui
+    restart: unless-stopped
     container_name: x-ui
     volumes:
       - ./db/:/etc/x-ui/
       - ./cert/:/root/cert/
-    restart: unless-stopped
 
   nginx:
     image: nginx:latest
