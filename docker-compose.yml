@@ -22,7 +22,9 @@ services:
       - ./nginx/conf.d:/etc/nginx/conf.d:rw
       - ./cert:/root/cert:ro
       - ./nginx/logs:/var/log/nginx:rw
+      # - ./start.sh:/start.sh
     ports:
       - 80:80
       - 54321:54321
       - 8081:8081
+    # command: bash /start.sh
